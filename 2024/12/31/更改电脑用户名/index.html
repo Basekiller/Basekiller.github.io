@@ -152,42 +152,41 @@
 
         <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 ></h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >更改电脑用户名</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <p>title: 更改电脑用户名<br>date: 2024-12-30 23:04:53<br>tags:</p>
-<h1 id="电脑更改用户名为英文"><a href="#电脑更改用户名为英文" class="headerlink" title="电脑更改用户名为英文"></a>电脑更改用户名为英文</h1><p>主要逻辑为：新建Administrator用户–&gt;更改原用户目录名–&gt;更改注册表–&gt;返回主用户后验证并删除新建用户Administrator。</p>
+                <h1 id="电脑更改用户名为英文"><a href="#电脑更改用户名为英文" class="headerlink" title="电脑更改用户名为英文"></a>电脑更改用户名为英文</h1><p>主要逻辑为：新建Administrator用户–&gt;更改原用户目录名–&gt;更改注册表–&gt;返回主用户后验证并删除新建用户Administrator。</p>
 <h2 id="新建Administrator用户"><a href="#新建Administrator用户" class="headerlink" title="新建Administrator用户"></a>新建Administrator用户</h2><p>​    在搜索栏中搜索cmd后用管理员模式打开并输入以下代码</p>
 <p><code>net user administrator /active:yes    //新建超级用户</code></p>
 <p>完成后利用Alt+F4或Alt+F4+Fn选择切换用户</p>
-<p><img src="D:\blog\hexoblog\source\image\更改电脑用户名\image-20241227025633865.png" alt="image-20241227025633865"></p>
+<p><img src="../image/%E6%9B%B4%E6%94%B9%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E5%90%8D/image-20241227025633865.png" alt="image-20241227025633865"></p>
 <h2 id="更改原用户目录名"><a href="#更改原用户目录名" class="headerlink" title="更改原用户目录名"></a>更改原用户目录名</h2><p>切换后打开任务管理器在用户界面内选择注销原账户。此步目的是为了关闭原账户的程序。</p>
-<p><img src="D:\blog\hexoblog\source\image\更改电脑用户名\image-20241227025847499.png" alt="image-20241227025847499"></p>
+<p><img src="../image/%E6%9B%B4%E6%94%B9%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E5%90%8D/image-20241227025847499.png" alt="image-20241227025847499"></p>
 <p>重命名C盘用户文件下的原用户文件名；</p>
 <p>若出现有其他文件正在运行，则在搜索栏中搜索资源监视器，右键以管理员方式运行；</p>
 <p>在CPU的关联的句柄条框下检索<code>C:\Users\原用户名</code></p>
-<p><img src="D:\blog\hexoblog\source\image\更改电脑用户名\image-20241227030411968.png" alt="image-20241227030411968"></p>
+<p><img src="../image/%E6%9B%B4%E6%94%B9%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E5%90%8D/image-20241227030411968.png" alt="image-20241227030411968"></p>
 <p>检索完毕后关闭所有的应用程序，之后再次重命名原用户文件</p>
 <h3 id="问题一：关闭程序时无法关闭，显示拒绝访问"><a href="#问题一：关闭程序时无法关闭，显示拒绝访问" class="headerlink" title="问题一：关闭程序时无法关闭，显示拒绝访问"></a>问题一：关闭程序时无法关闭，显示拒绝访问</h3><p><em>如在关闭程序时遇到程序（我是LisfService）无法关闭的问题时，可以搜索mscongfig后在服务中找到对应服务程序，关闭自启动，再用任务管理器关闭对应程序就可以正常终止程序。</em></p>
-<p><img src="D:\blog\hexoblog\source\image\更改电脑用户名\image-20241227031343264.png" alt="image-20241227031343264"></p>
+<p><img src="../image/%E6%9B%B4%E6%94%B9%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E5%90%8D/image-20241227031343264.png" alt="image-20241227031343264"></p>
 <h2 id="更改注册表"><a href="#更改注册表" class="headerlink" title="更改注册表"></a>更改注册表</h2><p>​    上述文件夹重命名成功后，搜索注册表编辑器，或直接利用命令行搜索regedit</p>
 <p>​    找到以下文件</p>
-<p><img src="D:\blog\hexoblog\source\image\更改电脑用户名\image-20241227031942230.png" alt="image-20241227031942230"></p>
+<p><img src="../image/%E6%9B%B4%E6%94%B9%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E5%90%8D/image-20241227031942230.png" alt="image-20241227031942230"></p>
 <p>之后找到microsoft</p>
-<p><img src="D:\blog\hexoblog\source\image\更改电脑用户名\image-20241227032102672.png" alt="image-20241227032102672"></p>
+<p><img src="../image/%E6%9B%B4%E6%94%B9%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E5%90%8D/image-20241227032102672.png" alt="image-20241227032102672"></p>
 <p>在其下路径中找到windows NT\currentversion</p>
-<p><img src="D:\blog\hexoblog\source\image\更改电脑用户名\image-20241227032339517.png" alt="image-20241227032339517"></p>
+<p><img src="../image/%E6%9B%B4%E6%94%B9%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E5%90%8D/image-20241227032339517.png" alt="image-20241227032339517"></p>
 <p>之后找到Profile文件，在其中找到对应有中文的路径</p>
-<p><img src="D:\blog\hexoblog\source\image\更改电脑用户名\image-20241227032542878.png" alt="image-20241227032542878"></p>
 <p>中文更改为自己设定的英文</p>
 <h2 id="返回主用户后验证并删除新建用户Administrator"><a href="#返回主用户后验证并删除新建用户Administrator" class="headerlink" title="返回主用户后验证并删除新建用户Administrator"></a>返回主用户后验证并删除新建用户Administrator</h2><p>更改完毕后重启电脑，登录原用户检查是否更改为对应的英文用户名</p>
 <p>如若更改成功则可以删除用户Administrator</p>
 <p>在cmd中输入:<code>net user administrator /active:no    //新建超级用户</code></p>
 <p>同时将用户目录下的administrator文件夹删除即可</p>
 <h3 id="问题二：登录后桌面位置找不到"><a href="#问题二：登录后桌面位置找不到" class="headerlink" title="问题二：登录后桌面位置找不到"></a>问题二：登录后桌面位置找不到</h3><p><em>如果登录原用户后出现桌面找不到位置的报错可以在注册表中找到以下两个路径，把其中的中文路径都改为英文路径即可</em></p>
-<p><img src="D:\blog\hexoblog\source\image\更改电脑用户名\image-20241227033229562.png" alt="image-20241227033229562"></p>
-<p><img src="D:\blog\hexoblog\source\image\更改电脑用户名\image-20241227033320735.png" alt="image-20241227033320735"></p>
+<p><img src="../image/%E6%9B%B4%E6%94%B9%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E5%90%8D/image-20241227033132154.png" alt="image-20241227033229562"></p>
+<p><img src="../image/%E6%9B%B4%E6%94%B9%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E5%90%8D/image-20241227033229562.png" alt="image-20241227033229562"></p>
+<p><img src="../image/%E6%9B%B4%E6%94%B9%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E5%90%8D/image-20241227033320735.png" alt="image-20241227033320735"></p>
 
             </div>
 
@@ -250,8 +249,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://example.com/2024/12/30/%E6%9B%B4%E6%94%B9%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E5%90%8D/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://example.com/2024/12/30/%E6%9B%B4%E6%94%B9%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E5%90%8D/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://example.com/2024/12/31/%E6%9B%B4%E6%94%B9%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E5%90%8D/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2024/12/31/%E6%9B%B4%E6%94%B9%E7%94%B5%E8%84%91%E7%94%A8%E6%88%B7%E5%90%8D/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
